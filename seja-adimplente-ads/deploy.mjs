@@ -3,6 +3,7 @@ import {
   getOrCreateBucket,
   deployFunction,
 } from "@remotion/lambda";
+import { enableTailwind } from "@remotion/tailwind-v4";
 import dotenv from "dotenv";
 import path from "path";
 import {
@@ -65,6 +66,7 @@ const { serveUrl } = await deploySite({
   siteName: SITE_NAME,
   bucketName,
   entryPoint: path.join(process.cwd(), "app/remotion/index.ts"),
+  webpackOverride: enableTailwind,
   region: REGION,
 });
 console.log(serveUrl);
