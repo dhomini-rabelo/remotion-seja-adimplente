@@ -4,7 +4,7 @@ This guide covers the commands needed to set up, preview, and render this projec
 
 ## Prerequisites
 
-- Node.js 18 or newer
+- Node.js 24
 - npm 9 or newer
 - Git
 
